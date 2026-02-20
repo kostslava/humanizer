@@ -1,0 +1,40 @@
+{
+  "name": "humanizer",
+  "version": "1.0.0",
+  "description": "CLI tool that rewrites AI-generated text into natural human prose via the Gemini API",
+  "main": "src/gemini.js",
+  "bin": {
+    "humanizer": "src/cli.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "humanize": "node src/cli.js"
+  },
+  "keywords": [
+    "ai",
+    "humanizer",
+    "gemini",
+    "rewrite",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "next": "^16.1.6",
+    "ora": "^9.3.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.0",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.2.0"
+  }
+}
