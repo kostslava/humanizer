@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const MODELS = [
-  { id: "gemini-3-flash-preview", label: "Gemini 3 Flash", tag: "Free" },
-  { id: "gemini-3-pro-preview", label: "Gemini 3 Pro", tag: "Pro" },
-  { id: "gemini-2.5-flash", label: "Gemini 2.5 Flash", tag: null },
-  { id: "gemini-2.5-pro", label: "Gemini 2.5 Pro", tag: null },
+  { id: "gemini-2.0-flash", label: "Gemini 2.0 Flash", tag: "Fast" },
+  { id: "gemini-2.0-flash-thinking-exp", label: "Flash Thinking", tag: null },
+  { id: "gemini-1.5-flash", label: "Gemini 1.5 Flash", tag: null },
+  { id: "gemini-1.5-pro", label: "Gemini 1.5 Pro", tag: "Best" },
 ];
 
 function wordCount(t) {
@@ -49,8 +49,8 @@ function GitHubIcon() {
 export default function Home() {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
-  const [model, setModel] = useState("gemini-3-flash-preview");
-  const [temperature, setTemperature] = useState(1.0);
+  const [model, setModel] = useState("gemini-2.0-flash");
+  const [temperature, setTemperature] = useState(1.4);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
