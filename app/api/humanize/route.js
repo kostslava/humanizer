@@ -31,7 +31,7 @@ export async function POST(request) {
   }
 
   // Default temperature raised to 1.4 — higher randomness = higher perplexity for detectors
-  const { text, model = "gemini-2.0-flash", temperature = 1.4, passes = 2 } = body;
+  const { text, model = "gemini-3-flash-preview", temperature = 1.4, passes = 2 } = body;
 
   if (!text?.trim()) {
     return Response.json({ error: "No text provided" }, { status: 400 });
